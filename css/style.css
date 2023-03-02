@@ -1,9 +1,17 @@
 /* Global variables */
 :root {
-    --clr-primary: #ff4500;
-    --clr-primary-light:  #17507e; 
+    --clr-primary:#0091ff;
+    --clr-primary-light:#ff4500;
     --clr-white: #ffffff;
     --clr-white-light: #f0f0f0;
+    --clr-shadow: #00000029;
+    --clr-black: #333333;
+    --clr-black-30: rgba(34, 32, 32, 0.3);
+    --clr-black-80: #222020cc;
+    --clr-black-90: #212020e6;
+    --clr-pink-light: #fdf2f2;
+    --clr-blue-light: #f2fdfb;
+
     --transition: all 0.3s linear;
     --box-shadow-light: 0px 3px 7px var(--clr-shadow);
     --box-shadow-dark: 0px 3px 7px var(--clr-black-30);
@@ -11,6 +19,8 @@
     --radius: 4px;
         
 }
+
+
 
 /* Global Styles */
 *,
@@ -74,7 +84,7 @@ img {
     margin-bottom: 15px;
     text-align: center;
     text-transform: capitalize;
-    color: var(--clr-primary);
+    color: var(--clr-primary-light);
   }
   .section-title .heading {
     color: var(--clr-primary-light);
@@ -129,7 +139,7 @@ img {
   }
   .button-primary-light {
     background: var(--clr-white);
-    color: var(--clr-primary);
+    color: var(--clr-primary-light);
   }
   .button-primary-dark:hover {
     background: var(--clr-primary-light);
@@ -167,7 +177,17 @@ img {
       height: 50px;
     }
   }
-  
+
+ 
+  .sidebar-container .logo-section {
+    width:150px;
+  }
+  .sidebar-container .logo-section img{
+    width:100%;
+  }
+  .sidebar-container .close-button{
+    width: 25px;
+  }
   /* animations */
   @keyframes bounceAnimation {
     0% {
